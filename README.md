@@ -69,7 +69,9 @@ HFTryptonite-Crypto-Bot/
 ├── tests/ # Unit tests for each module 
 ├── README.md # This file 
 ├── requirements.txt # Python dependencies 
-└── main.py # Main script to run simulations and benchmarks
+├── main.py # Main script to run simulations and benchmarks
+├── bybit.py # script with connections to ByBit API
+└── config.py configuration file with APIs and global variables
 ```
 
 ## Installation
