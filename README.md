@@ -2,6 +2,8 @@
 
 This repository implements and benchmarks 10 high-frequency trading (HFT) strategies using Python. The project is designed to simulate various HFT methods on synthetic (or real) market data, compare their performance, and serve as a starting point for further research and development.
 
+![Screenshot of the Project](assets/preview_pic.jpeg)
+
 ## Table of Contents
 
 - [Project Overview](#project-overview)
