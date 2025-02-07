@@ -55,7 +55,8 @@ This project explores and benchmarks a range of HFT algorithms, from classic mar
 ```
 HFTryptonite-Crypto-Bot/ 
 ├── notebooks/ # Jupyter notebooks for exploration and visualization 
-├── strategies/ # Implementation of individual HFT strategies │ ├── market_making.py 
+├── strategies/ # Implementation of individual HFT strategies 
+│ ├── market_making.py 
 │ ├── stat_arb.py 
 │ ├── momentum_trading.py 
 │ ├── mean_reversion.py 
