@@ -102,10 +102,12 @@ HFTryptonite-Crypto-Bot/
 3. Interactive exploration:
     Use the notebooks in the notebooks/ directory to visualize data and performance metrics.
 
-4. Benchmarking
-    Benchmarks are located in the benchmarks/ folder. These scripts compare key performance indicators (KPIs) such as profit, drawdown, execution speed, and risk measures.
+### Benchmarking
 
-    You are encouraged to add new benchmark tests or modify the existing ones as you refine the strategies.
+Benchmarks are located in the benchmarks/ folder. These scripts compare key performance indicators (KPIs) such as profit, drawdown, execution speed, and risk measures.
+
+You are encouraged to add new benchmark tests or modify the existing ones as you refine the strategies.
+
 ### Roadmap
 Integrate live or historical market data feeds.
 Optimize strategy implementations for reduced latency.
