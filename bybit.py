@@ -24,7 +24,7 @@ def generate_signature(params, secret):
 def get_wallet_balance():
     """
     Retrieve your wallet balance using the private endpoint.
-    Endpoint: GET /v2/private/wallet/balance
+    Endpoint: GET /v5/account/wallet-balance
     """
     endpoint = '/v5/account/wallet-balance'
     url = BASE_URL + endpoint
@@ -32,7 +32,8 @@ def get_wallet_balance():
     # Create the parameters. The timestamp should be in milliseconds.
     params = {
         "api_key": API_KEY,
-        "timestamp": int(time.time() * 1000)
+        "timestamp": int(time.time() * 1000), 
+        "accountType": "UNIFIED",
     }
     
     # Generate the signature using your secret key and add it to the parameters.
@@ -42,9 +43,9 @@ def get_wallet_balance():
     response = requests.get(url, params=params)
     
     # Parse the response as JSON.
-    return response.content
+    return response.json()
 
 if __name__ == "__main__":
     balance_info = get_wallet_balance()
     print("Wallet Balance Info:")
-    print(balance_info)
+    print(balance_info["result"]["list"][0]["totalMarginBalance"])
